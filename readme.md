@@ -13,6 +13,7 @@ DOCKER OPEN WEBUI
 ```ollama run llama3-groq-tool-use:latest```
 -------------------------------------------------------------------------------------------------------------------------------------------
 ## PYTHON PLAYWRIGHT:
+
 1) Install the Playwright Module
 ```pip install pytest-playwright```
 2) Playwright config
@@ -25,11 +26,13 @@ DOCKER OPEN WEBUI
 ```npx @playwright/mcp```
 
 2) To run the Playwright Server:
+
 ```npx @aethr/playwright-mcp@latest --config mcp.config.json```
             (OR)
 ```npx @playwright/mcp --config mcp.config.json```
 
 3) Save the file "mcp.config.json"
+--------------------------------------------------------------------------------------------------
     {
     "browser": {
         "browserName": "chromium",
@@ -67,6 +70,7 @@ DOCKER OPEN WEBUI
     ]
     }
 
+--------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------
 ## MCPO:
 1) Install MCPO Module
@@ -119,6 +123,8 @@ DOCKER OPEN WEBUI
 -------------------------------------------------------------------------------------------------------------------------------------------
 ## DOCKER OPEN WEBUI
 1) Save the docker-compose.yml
+--------------------------------------------------------------------------------------------------
+```
     version: "3.9"
 
     services:
@@ -154,4 +160,6 @@ DOCKER OPEN WEBUI
     volumes:
     ollama:
     openwebui:
+```
+--------------------------------------------------------------------------------------------------
 2) Start the container from Docker Desktop
