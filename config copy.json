@@ -1,0 +1,14 @@
+{
+  "model": {
+    "provider": "ollama",
+    "base_url": "http://localhost:11434/v1",
+    "model": "llama3-groq-tool-use"
+  },
+  "mcpServers": {
+    "playwright": {
+      "type": "streamable_http",
+      "url": "http://localhost:8931/mcp",
+      "headers": {}              
+    }
+  }
+}
